@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Railway Concession Form</title> 
+</head> 
+<body> 
+<h2>Railway Concession Form</h2> 
+<form action="/submit" method="POST"> 
+ 
+ 
+<!-- Personal Details Section --> 
+<fieldset> 
+<legend>Personal Details</legend> 
+ 
+ 
+<label for="name">Name:</label> 
+<input type="text" id="name" name="name" required> 
+<br><br> 
+<label for="branch">Branch:</label> 
+<input type="text" id="branch" name="branch" required> 
+<br><br> 
+ 
+ 
+<label for="roll_no">Roll No:</label> 
+<input type="text" id="roll_no" name="roll_no" required> 
+<br><br> 
+</fieldset> 
+ 
+ 
+<!-- Current Details Section --> 
+<fieldset> 
+<legend>Current Details</legend> 
+ 
+ 
+<label>Class:</label> 
+<!-- Radio buttons for Class selection --> 
+<label for="first_class"> 
+<input type="radio" id="first_class" name="class" value="first_class" required> 
+First Class 
+</label> 
+<br> 
+<label for="second_class"> 
+<input type="radio" id="second_class" name="class" value="second_class"> 
+Second Class 
+</label> 
+<br> 
+<label for="ac_class"> 
+<input type="radio" id="ac_class" name="class" value="ac_class"> 
+AC Class 
+</label> 
+<br><br> 
+ 
+ 
+<label for="period">Period:</label> 
+<select id="period" name="period" required> 
+<option value="monthly">Monthly</option> 
+<option value="quarterly">Quarterly</option> 
+</select> 
+<br><br> 
+</fieldset> 
+ 
+ 
+<!-- Railway Details Section --> 
+<fieldset> 
+<legend>Railway Details</legend> 
+ 
+ 
+<label for="railway_line">Railway Line:</label> 
+<input type="text" id="railway_line" name="railway_line" required> 
+<br><br> 
+ 
+ 
+ 
+ 
+ 
+ 
+<label for="from">From:</label> 
+<input type="text" id="from" name="from" required> 
+<br><br> 
+ 
+ 
+<label for="to">To:</label> 
+<input type="text" id="to" name="to" required> 
+<br><br> 
+</fieldset> 
+ 
+ 
+<!-- Checkbox Section --> 
+<fieldset> 
+<legend>Additional Information</legend> 
+ 
+ 
+<label for="agree"> 
+<input type="checkbox" id="agree" name="agree" value="yes"> 
+I agree to the terms and conditions 
+</label> 
+<br><br> 
+</fieldset> 
+ 
+ 
+<button type="submit">Submit</button> 
+</form> 
+</body> 
+</html> 
